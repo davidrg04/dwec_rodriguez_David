@@ -39,7 +39,7 @@ header ul li a{
 
 header ul li:hover{
     cursor: pointer;
-    border-bottom: 4px white solid;
+    border-bottom: 4px yellow solid;
     /* border-radius: 0px; */
     
 }
@@ -53,8 +53,10 @@ section{
     height: 855px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(../IMG/fondopagina.png);
+    background-size: auto;
 }
 article{
-    border: 1px black solid;
+    /* border: 1px black solid; */
     font-size: 32px;
 }
