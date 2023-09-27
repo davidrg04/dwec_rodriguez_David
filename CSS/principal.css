@@ -89,7 +89,26 @@ article div p:nth-child(1){
     border-bottom: 3px #FADF38 solid;
 }
 article div p:nth-child(2){
-    font-size: 14px;
-    color: gray;
+    color: black;
+    font-size: 10px;
+    margin-left: 20px;
+    
+    
+}
+article div p:nth-child(3){
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
     margin-left: 20px;
 }
+
+article a:active,
+article a:link,
+article a:active{
+    text-decoration: none;
+}
+article a:hover{
+    color: #FADF38;
+    border-bottom: 3px #FADF38 solid;
+}
+
