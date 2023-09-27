@@ -11,7 +11,8 @@ header{
     position: relative;
     /* border: red 1px solid; */
     padding: 20px;
-    background-color: #343B3D;
+    background-color: #19191D;
+    border-bottom: 1px #FADF38 solid;
 }
 header div{
     width: 100%;
@@ -25,7 +26,7 @@ header ul li{
     list-style: none;
     display: inline;
     /* padding: 70px; */
-    padding-left: 15px;
+    padding-left: 15px;   
     padding-right: 15px;
     padding-bottom: 15px;
     color: white;
@@ -59,4 +60,28 @@ section{
 article{
     /* border: 1px black solid; */
     font-size: 32px;
+}
+article div{
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    border: 3px #FADF38 solid;
+    color: black;
+    font-size: 24px;
+    padding-top: 2px;
+}
+article div p:nth-child(1){
+    position: relative;
+    width: 260px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+    font-weight: 600;
+    border-bottom: 3px #FADF38 solid;
+}
+article div p:nth-child(2){
+    font-size: 14px;
+    color: gray;
+    margin-left: 20px;
 }
