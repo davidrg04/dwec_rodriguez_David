@@ -87,6 +87,7 @@ article div p:nth-child(1){
     margin-left: 70px;
     font-weight: 600;
     border-bottom: 3px #FADF38 solid;
+    padding-left: 50px;
 }
 article div p:nth-child(2){
     color: black;
