@@ -102,7 +102,7 @@ article div p:nth-child(3){
     margin-left: 20px;
 }
 
-article a:active,
+article a:visited,
 article a:link,
 article a:active{
     text-decoration: none;
