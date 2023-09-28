@@ -10,7 +10,7 @@ header{
     height: 100px;
     position: relative;
     /* border: red 1px solid; */
-    padding: 20px;
+    padding-bottom: 120px;
     background-color: #19191D;
     border-bottom: 1px #FADF38 solid;
 }
@@ -46,7 +46,7 @@ header ul li{
     text-decoration: none;
 } */
 
-header ul li:hover{
+header ul li:not(:first-child):hover{
     cursor: pointer;
     border-bottom: 4px yellow solid;
     /* border-radius: 0px; */
