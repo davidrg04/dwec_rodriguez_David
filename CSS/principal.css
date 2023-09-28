@@ -63,7 +63,7 @@ section{
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url(../IMG/fondopagina.png);
-    background-size: auto;
+    background-size: cover;
 }
 article{
     /* border: 1px black solid; */
