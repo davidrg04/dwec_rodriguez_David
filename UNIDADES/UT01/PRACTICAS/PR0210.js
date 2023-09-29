@@ -39,12 +39,12 @@ let numeroMenor=numero;
 let numeroMayor=numero;
 
 for (let i = 2; i <=5; i++) {
-    let n1=Number(prompt(`Dime el numero ${i}`));
-    if (n1<numeroMenor) {
-        numeroMenor=n1;
+    numero=Number(prompt(`Dime el numero ${i}`));
+    if (numero<numeroMenor) {
+        numeroMenor=numero;
     }
-    if(n1>numeroMayor){
-        numeroMayor=n1;
+    if(numero>numeroMayor){
+        numeroMayor=numero;
     }
 }
 
