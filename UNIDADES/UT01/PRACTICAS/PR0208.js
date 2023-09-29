@@ -8,6 +8,10 @@ if (edad<=2010 && edad>=1994) {
     alert(`Perteneces a la Generación X, ya que naciste en ${edad}`);
 }else if (edad<=1968 && edad>=1949) {
     alert(`Pertenece a la Generación Baby Boomer, ya que naciste en ${edad}`);
-}else{
-    alert(`No perteneces a ninguna generacion`);
+}else if (isNaN(edad)) {
+    alert(`Eso no es una fecha valida`)
+} else {
+    
+        alert(`No perteneces a ninguna generacion`);
+    
 }
