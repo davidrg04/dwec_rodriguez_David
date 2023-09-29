@@ -1,5 +1,11 @@
 let edad=Number(prompt('Dime cuando naciste y te dire a que generacion perteneces'));
 
+
+while ((edad===null) || (edad.trim()=='' || isNaN(edad))) {
+    
+}
+
+
 if (edad<=2010 && edad>=1994) {
     alert(`Perteneces a la Generación Z, ya que naciste en ${edad}`);
 }else if (edad<=1993 && edad>=1981){

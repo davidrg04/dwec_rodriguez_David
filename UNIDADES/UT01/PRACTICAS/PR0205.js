@@ -1,7 +1,7 @@
-let numero=4;
-let numeroUsuario=Number(prompt('Adivina el numero del 0-10'));
 
-while (numeroUsuario!=4) {
-    numeroUsuario=Number(prompt('NO, ESE NO ES EL NUMERO, INDIQUE OTRO'));
+let numeroUsuario=(prompt('Dime un numero valido'));
+
+while ((numeroUsuario === null) || (numeroUsuario.trim()=='') || (isNaN(Number(n)))) {
+    numeroUsuario=(prompt('NO ES VALIDO INDIQUE OTRO'));
 }
-alert(`Felicidades el número era ${numero}`);
+alert(`El ${numero} es valido`);
