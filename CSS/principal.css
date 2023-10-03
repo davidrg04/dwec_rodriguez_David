@@ -98,6 +98,7 @@ article div p:nth-child(2){
     margin-left: 164px;
     border-bottom: 2px black solid;
     width: 73px;
+    padding-left: 4px;
     
     
 }
