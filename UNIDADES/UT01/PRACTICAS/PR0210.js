@@ -34,11 +34,11 @@
 // } 
 
 // alert(`El mayor número es ${mayor} y el menor es ${menor}`);
-let numero=Number(prompt(`Dime el numero 1`));
-let numeroMenor=numero;
-let numeroMayor=numero;
 
-for (let i = 2; i <=5; i++) {
+let numeroMenor=Infinity;
+let numeroMayor=-Infinity;
+
+for (let i = 1; i <=5; i++) {
     numero=Number(prompt(`Dime el numero ${i}`));
     if (numero<numeroMenor) {
         numeroMenor=numero;

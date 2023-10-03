@@ -1,6 +1,6 @@
 let numero=Number(prompt('Dime un número'));
 
-while (numero<=0 || isNaN(numero)) {
+while (numero<=0 || isNaN(numero) ) {
     numero=Number(prompt('Dime un número valido'));
 }
 
