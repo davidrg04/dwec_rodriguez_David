@@ -1,4 +1,4 @@
-let resultado=getFibonacci(23);
+let resultado=getFibonacci(6);
 alert(resultado);
 
 
@@ -6,7 +6,7 @@ function getFibonacci(n) {
     
 
     let fibonacci=(n==0) ? 0:
-            (n==1) ? 1: ((n-1)+(n-2));
+            (n==1) ? 1: (getFibonacci(n-1)+ getFibonacci(n-2));
             
     return fibonacci;
 
