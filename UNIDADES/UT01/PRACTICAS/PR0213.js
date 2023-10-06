@@ -30,14 +30,15 @@ function isPrime(n){
         return true;
     }
 
-    if (n%2==0) {
+    if (n%2==0 || n%3==0) {
         return false;
     }
 
-    for (let i = 3; i <= Math.sqrt(n); i+=2) {
+    for (let i = 5; i <= Math.sqrt(n); i+=2) {
         if (n%i===0) {
-            return true;
+            return false;
         }
         
     }
+    return true;
 }
