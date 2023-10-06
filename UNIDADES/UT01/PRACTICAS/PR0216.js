@@ -11,7 +11,7 @@ function convertToBytes(capacidad,unidad) {
             (unidad=='Gigabyte'|| unidad=='GB') ? capacidad*1000000000:
             (unidad=='Terabyte'||unidad=='TB') ? capacidad*1000000000000:
             (unidad== 'Petabyte'||unidad=='PB') ? capacidad*1000000000000000:
-            (unidad=='Exabyte'||unidad=='EB') ? capacidad*(1*Math.pow(10,18)) : 'No se encuentra la medida';
+            (unidad=='Exabyte'||unidad=='EB') ? capacidad*(1*Math.pow(10,18)) : isNaN;
     return bytes;
 
 }

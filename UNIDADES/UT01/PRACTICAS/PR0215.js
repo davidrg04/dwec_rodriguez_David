@@ -1,6 +1,3 @@
-
-
-
 let numero=calc(2,2,'%');
 
 alert(`El resultado es ${numero}`)
@@ -13,7 +10,7 @@ function calc(operador, operando1, signo){
             resultado=operador/operando1;
             return resultado;
         case '+':
-            resultado=operador+operando1;
+            resultado=+operador + +operando1;
             return resultado;
         case '-':
             resultado=operador-operando1;

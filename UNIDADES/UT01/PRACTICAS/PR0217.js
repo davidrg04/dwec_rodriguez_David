@@ -9,7 +9,7 @@ function convertCapacity(n,from,to) {
     (to=='Gigabyte'|| to=='GB') ? bytes/1000000000:
     (to=='Terabyte'|| to=='TB') ? bytes/1000000000000:
     (to== 'Petabyte'||to=='PB') ? bytes/1000000000000000:
-    (to=='Exabyte'||to=='EB') ? bytes/(1*Math.pow(10,18)) : 'No se encuentra la medida';
+    (to=='Exabyte'||to=='EB') ? bytes/(1*Math.pow(10,18)) : isNaN;
 
     return resultado;
 }
@@ -23,7 +23,7 @@ function convertToBytes(capacidad,unidad) {
             (unidad=='Gigabyte'|| unidad=='GB') ? capacidad*1000000000:
             (unidad=='Terabyte'||unidad=='TB') ? capacidad*1000000000000:
             (unidad== 'Petabyte'||unidad=='PB') ? capacidad*1000000000000000:
-            (unidad=='Exabyte'||unidad=='PB') ? capacidad*(1*Math.pow(10,18)) : 'No se encuentra la medida';
+            (unidad=='Exabyte'||unidad=='PB') ? capacidad*(1*Math.pow(10,18)) : isNaN;
     return bytes;
 
 }

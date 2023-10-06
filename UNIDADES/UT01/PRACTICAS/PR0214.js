@@ -5,14 +5,12 @@ alert(`El Factorial de ${numero} es ${numeroFactorial}`)
 
 
 function calcFact(n){
-    let factorial=1;
+    
     if (n===1) {
-        return factorial;
+        return 1;
     } else {
-        for (let i = 2; i <= n; i++) {
-            factorial*=i;
-        }
+        return n*calcFact(n-1);
     }
     
-    return factorial;
+    
 }
