@@ -1,5 +1,5 @@
 
-let numero=prompt('Dime un numero y te dire si es valido');
+let numero=prompt('Dime un número y te dire si es válido');
 let validNumber=isNumber(numero);
 
 alert(validNumber);
