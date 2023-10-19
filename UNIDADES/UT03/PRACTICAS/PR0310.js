@@ -12,6 +12,5 @@ function replaceWithPosition(str) {
     for (let letra of str) {
         str=str.replace(letra, alfabeto.indexOf(letra.toLowerCase())+1);
     }
-
     return str;
 }

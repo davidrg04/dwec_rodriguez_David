@@ -1,6 +1,6 @@
 
-
-countVowels("A vzb eu")
+let contador;
+console.log(countVowels("A vzb eu"));
 
 
 
@@ -10,5 +10,5 @@ function countVowels(str) {
         contador+=(char=='A'| char=='E' | char=='I' | char=='O' | char=='U') ? 1 : 0;
     }
 
-    console.log(contador);
+    return contador
 }
