@@ -17,7 +17,7 @@ for (let item of arr) {
 
 function generateUsername(arr) {
     arr.forEach(function(item) {
-        let nickname= item.name.charAt(0)+item.surname+Math.floor(Math.random()*10).toString()+Math.floor(Math.random()*10).toString();
+        let nickname= `${item.name[0]}${item.surname}${(Math.random()*100).toFixed(0).padStart(2,"0")}`.toLowerCase();
         item.nickname = nickname;
     });
 }
