@@ -38,4 +38,10 @@ let getUsernames = function() {
     return estudiantes;
 };
 
+
+
+function getUsernames(arr){
+    arr.map( ({nombre,ap1,ap2}) =>{})
+}
+
 console.log(getUsernames());

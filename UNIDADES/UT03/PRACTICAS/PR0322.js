@@ -32,18 +32,27 @@ let arr = [
 
 
 
-let getAlumnosByCiclo = (str) => {
-    let estudiantes = []; 
-    arr.forEach(estudiante =>{
-        let estudiante2;
-        if (estudiante.ciclo==str) {
-         estudiante2 = `${estudiante.nombre} ${estudiante.ape1} ${estudiante.ape2}`;
-         estudiantes.push(estudiante2);   
-        }
+// let getAlumnosByCiclo = (str) => {
+//     let estudiantes = []; 
+//     arr.forEach(estudiante =>{
+//         let estudiante2;
+//         if (estudiante.ciclo==str) {
+//          estudiante2 = `${estudiante.nombre} ${estudiante.ape1} ${estudiante.ape2}`;
+//          estudiantes.push(estudiante2);   
+//         }
         
-    });
+//     });
     
-    return estudiantes;
-};
+//     return estudiantes;
+// };
 
-console.log(getAlumnosByCiclo('DAW'));
+console.log(getAlumnosByCiclo('DAW',arr));
+
+
+
+function getAlumnosByCiclo(str,arr) {
+    return arr.filter(({ciclo}) => ciclo == str)
+        .map( alumno =>{
+            return `${alumno.nombre} ${alumno.ape1} ${alumno.ape2}`
+        })
+}
