@@ -13,7 +13,7 @@
                 <li><a href="../../index.html"><img src="../../IMG/LogoPersonalBueno-removebg-preview.png" height="50px" width="60px"></a></li>
                 <li id="ut01"><a href="../UT01/index.html">UT02</a></li>
                 <li id="ut03"><a href="./index.html">UT03</a></li>
-                <li>UT04</li>
+                <li><a href="../UT04/index.html">UT04</a></li>
                 <li>UT05</li>
                 <li>UT06</li>
                 <li>UT07</li>
@@ -23,6 +23,7 @@
         </div>
     </header>
     <section>
+        <div id="opcionales"><a href="./PRACTICAS/OPCIONALES/index.html">OPCIONALES</a></div>
         <article>
             <div>
                 <p>PRÁCTICAS UT03.</p>
@@ -39,7 +40,23 @@
                 <p><span><a href="./PRACTICAS/PR0311.html">-PR0311 Cadenas (V)</a>: </span><span>Crea una función ascendDescend( len, min, max ) que devuelva una cadena formada por la secuencia de longitud len formada por la concatenación de números que comience en min y se incrementen hasta max para posteriormente decrementarse, repitiendo el ciclo hasta alcanzar la longitud len.</span></p>
                 <p><span><a href="./PRACTICAS/PR0312.html">-PR0312 Arrays (I)</a>: </span><span>Crea una función isEqualArr(arr1, arr2) que reciba como parámetro dos arrays y devuelva true si el contenido de ambos arrays es el mismo.</span></p>
                 <p><span><a href="./PRACTICAS/PR0313.html">-PR0313 Arrays (II)</a>: </span><span>Crea una función combineArr(arr1, arr2) que reciba como parámetro dos arrays y devuelva un array que sea el resultado de combinar los contenidos de ambos arrays.</span></p>
-                <p><span></span></p>
+                <p><span><a href="./PRACTICAS/PR0314.html">-PR0314 Arrays (I)</a>: </span><span>Crea una función sendMessage(arr) que reciba como parámetro un array con nombres de usuarios y, para cada uno de ellos, muestre por consola una mensaje de la forma Hola, <usuario>, bienvenido al curso de DWEC.</span></p>
+                <p><span><a href="./PRACTICAS/PR0315.html">-PR0315 Arrays (II)</a>: </span><span>Crea una función getOdd(arr) que reciba como parámetro un array con números y devuelva otro array que contenga únicamente los números del primer array que sean impares.</span></p>
+                <p><span><a href="./PRACTICAS/PR0316.html">-PR0316 Arrays (III)</a>: </span><span>Crea un función createPow( arr, pow ) cuyo primer parámetro sea un array de números y el segundo un número. Esta función devolverá un array donde cada elemento será el resultado de elevar cada uno de los elementos arr a pow.</span></p>
+                <p><span><a href="./PRACTICAS/PR0317.html">-PR0317 Arrays (IV)</a>: </span><span>Crea una función generateUsername(arr) que tome como parámetro un array de objetos con las propiedades name y surname y añada a cada elemento una propiedad nickname cuyo valor será la primera letra del nombre seguida del apellido (todo en minúsculas) y dos dígitos aleatorios.
+
+                    Ten en cuenta que nickname se tiene que añadir al mismo array y no crear uno nuevo.</span></p>
+                <p><span><a href="./PRACTICAS/PR0318.html">-PR0318 Arrays (V)</a>: </span><span>Crea una función max( arr ) que recoja un array de números y devuelva el valor máximo. Este ejercicio es para practicar con la función reduce, por lo que debes utilizar esta función para hacerlo.</span></p>
+                <p><span><a href="./PRACTICAS/PR0319.html">-PR0319 Arrays (VII)</a>: </span><span>Vamos a suponer que tenemos un arrays con cadenas que incluyen fechas de la forma DD-MM-YYYY donde DD es el día, MM es el mes y YYYY es el año. Desarrolla una función sortDates( arr ) que devuelva un array con las mismas fechas ordenadas cronológicamente. El objetivo de este ejercicio es prácticas con la manipulación de cadenas y métodos de arrays, por lo que no debes utilizar las funciones de JavaScript para trabajar con fechas.</span></p>
+                <p><span><a href="./PRACTICAS/PR0320.html">-PR0320 Arrays de objetos (I)</a>: </span><span>Al introducir los datos alguien se olvidó de añadir la letra al DNI. Crea una función addNif(arr) que modifique el array que se le pase añadiendo una propiedad nif que contenga el NIF (DNI+letra) y elimine la propiedad dni.
+
+                    Para calcular la letra del NIF simplemente hay que calcular el resto cuando se divide el número del DNI entre 23 y se asigna la letra según la siguiente tabla. Se explica con más detalle aquí.</span></p>
+                <p><span><a href="./PRACTICAS/PR0321.html">-PR0321 Arrays de objetos (II)</a>: </span><span>Crea una función getAverageGrade( str ) que recoja como parámetro el nombre de un módulo y devuelva la nota media de dicho módulo.</span></p>
+                <p><span><a href="./PRACTICAS/PR0322.html">-PR0322 Arrays de objetos (III)</a>: </span><span>Crea una función getAlumnosByCiclo(str) que tome como parámetro una cadena str que contenga el nombre de un ciclo y devuelva el listado de alumnos que cursan dicho ciclo. Para cada alumno devolverá su nombre y apellidos.</span></p>
+                <p><span><a href="./PRACTICAS/PR0323.html">-PR0323 Array de objetos (IV)</a>: </span><span>Crea una función getNumberOfAlumnos( str ) que tome como parámetro el nombre de un ciclo y devuelva el número de alumnos que hay matriculados en dicho ciclo.</span></p>
+                <p><span><a href="./PRACTICAS/PR0324.html">-PR0324 Array de objetos (V)</a>: </span><span>Vamos a generar para cada alumno un nombre de usuario formado por el nombre y la primera letra de cada uno de los apellidos, todo en minúsculas. Crea una función llamada getUsernames() que devuelva un array con los nombres de usuario generados para cada uno de los alumnos.</span></p>
+                <p><span><a href="./PRACTICAS/PR0325.html">-PR0325 Array de objetos (VI)</a>: </span><span>Crea una función llamada getAverages() que calcule para cada alumno la nota media de todos los módulos que ha cursado. Debe devolver un array de la forma { alumno: 'XXX YYY', expediente: 'ZZZZ', nota_media: 00 }</span></p>
+                <p><span><a href="./PRACTICAS/PR0326.html">-PR0326 Array de objetos (VII)</a>: </span><span>Crea una una función getUnsecurePass() que devuelva un array con los nombres y apellidos de los alumnos que tengan una contraseña que no cumpla los requisitos de complejidad.</span></p>
             </div>
         </article>
     </section>

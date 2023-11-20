@@ -52,7 +52,7 @@ header ul li:not(:first-child):hover{
     /* border-radius: 0px; */
     
 }
-#ut03{
+#ut04{
     border-bottom: 4px yellow solid;
 }
 
@@ -105,5 +105,29 @@ article a:active {
     color: black;
 }
 article a:hover{
+    color: #FADF38;
+}
+
+#opcionales{
+    background-color: white;
+    width: 10%;
+    height: 50px;
+    color: #19191D;
+    font-weight: 800;
+    font-size: 17px;
+    text-align: center;
+    padding: 14px;
+    border: 4px solid #FADF38;
+    border-radius: 10px;
+
+}
+#opcionales a:link,
+#opcionales a:visited,
+#opcionales a:active{
+    text-decoration: none;
+    color: #19191D;
+}
+
+#opcionales a:hover{
     color: #FADF38;
 }

@@ -1,0 +1,7 @@
+
+
+
+
+function findNextPower(numero, pow) {
+    
+}

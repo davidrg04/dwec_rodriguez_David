@@ -1,0 +1,67 @@
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #206A5D;
+        color: white;
+        font-size: 7em;
+        height: 200px;
+        font-weight: 700;
+    }
+
+    #main {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    #products-section {
+        width: 70vw;
+        background-color: #FFCC29;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px; /* Espacio alrededor de los productos */
+    }
+
+    .product {
+        width: 60px; /* Calcula el ancho del producto restando el espacio del padding/margen */
+        margin: 80px; /* Espacio entre los productos */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto */
+        height: 70px;
+    }
+
+    .product-foto{
+        width: calc(50% - 40px);
+    }
+
+    #cart-section {
+        width: 30vw;
+        min-width: 350;
+        background-color: #CA9E13;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    img{
+        width: 130px;
+        height: 140px;
+    }

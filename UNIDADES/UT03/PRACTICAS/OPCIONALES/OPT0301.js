@@ -11,9 +11,15 @@ console.log(isHeterograma("Victor"));
 
 
 function isHeterograma(cadena) {
-    let arrayCadena = cadena.split();
+    
+    for (let char of cadena) {
+        let cont = 0;
+        for (let char2 of cadena) {
+            cont = (char == char2) ? cont+1 : cont;
+            
+        }
 
-    let contiene = arrayCadena.some((item) => item == item);
-
-    return contiene;
+        if (cont >=2) {return false};
+    }
+    return true;
 }

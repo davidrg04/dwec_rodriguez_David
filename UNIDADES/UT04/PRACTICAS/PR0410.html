@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #dddddd;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+        article{
+            display: flex;
+            justify-content: center;
+        }
+        #contenedor{
+            position: relative;
+            top: 200px;
+            display: flex;
+            width: 780px;
+            padding: 30px;
+            box-sizing: border-box;
+            border: 6px solid #FADF38;
+            border-radius: 40px;
+            height: 560px;
+            justify-content: center;
+            align-items: center;
+            background-color: #C7D3C6;
+        }
+        button{
+            margin: 20px;
+            padding: 20px 50px;
+            background-color: white;
+            border-radius: 10px;
+            font-size: 26px;
+            border: 3px solid black;
+            
+        }
+        button:hover{
+            transform: translateY(-2px);
+            box-shadow: 7px 10px 17px -2px rgba(27,23,23,0.75);
+            -webkit-box-shadow: 7px 10px 17px -2px rgba(27,23,23,0.75);
+            -moz-box-shadow: 7px 10px 17px -2px rgba(27,23,23,0.75);
+            
+        }
+        button:active{
+            transform: translateY(2px);
+            box-shadow: none;
+        }
+        #start{
+            background-color: #5EC156;    
+        }
+        #start:hover{
+            background-color: #37BF2C;
+        }
+        #stop{
+            background-color: #F34040;
+        }
+        #stop:hover{
+            background-color: #F31313;
+        }
+        #reset{
+            background-color: #5F9CB0;
+        }
+        #reset:hover{
+            background-color: #2283A2;
+        }
+        #botones{
+            display: flex;
+            background-color: #C7D3C6;
+            position: relative;
+            bottom: -150px;
+            left: -140px;
+            align-items: center;
+            
+        }
+        span{
+            font-size: 70px;
+            position: relative;
+            left: 45%;
+            top: -130px;
+            background-color: #C7D3C6;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article>
+                <div id="contenedor">
+                    <span id="tiempo">00:00.00</span>
+                    <div id="botones">
+                        <button id="start">Start</button>
+                        <button id="stop">Stop</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="./PR0410.js"></script>
+</html>
