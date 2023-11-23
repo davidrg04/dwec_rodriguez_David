@@ -187,10 +187,10 @@ paginasTotales = Math.ceil(products.length / elementsPerPage);
         productosCarrito.push(nuevoProducto);
     }
 
-    // Vaciar el contenido del carrito antes de mostrar los productos actualizados
+    
     document.getElementById("productoEnCarro").innerHTML = "";
 
-    // Mostrar los productos actualizados en el carrito
+   
     productosCarrito.forEach(producto => {
         document.getElementById("productoEnCarro").innerHTML +=
             `

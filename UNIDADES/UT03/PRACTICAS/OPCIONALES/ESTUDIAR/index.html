@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #contenedor{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        div{
+            display: inline-block;
+            margin: 30px;
+        }
+        #listadoAlumnos{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="buscar">
+            <input type="search">
+            <span id="botonBuscar">BUSCAR</span>
+        </div>
+        <div id="añadir">
+            <input type="text" id="nuevoNombre">
+            <input type="number" id="nuevaEdad">
+            <input type="text" id="nuevoCurso">
+            <span id="botonAñadir">AÑADIR</span>
+        </div>
+        <div id="borrar">
+            <input type="text">
+            <span id="botonBorrar">BORRAR</span>
+        </div>
+        <div id="alumnos">
+            <div>Nombre</div>
+            <div>Ficha</div>
+            <div id="listadoAlumnos">
+
+
+            </div>
+        </div>
+
+        
+
+        <table>
+            <tr>
+                <td>Nombre : </td>
+                <td id="nombreAlumno"></td>
+            </tr>
+            <tr>
+                <td>Edad : </td>
+                <td id="edadAlumno"></td>
+            </tr>
+            <tr>
+                <td>Curso : </td>
+                <td id="cursoAlumno"></td>
+            </tr>
+        </table>
+
+
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
