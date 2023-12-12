@@ -99,7 +99,7 @@ let products = [
   ]
 
 
-let elementsPerPage = 8;
+let elementsPerPage = 6;
 let currentPage = 0;
 let filter = "";
 let productosCarrito = [];
@@ -110,7 +110,8 @@ paginasTotales = Math.ceil(products.length / elementsPerPage);
 
 
   function mostrarProductos() {
-    let divProductos = document.getElementById("products-section");
+    console.log(filter);
+    let divProductos = document.getElementById("products-section2");
     divProductos.innerHTML = "";
     products
         .filter(({product}) => product.toLowerCase().includes(filter))
@@ -139,8 +140,14 @@ paginasTotales = Math.ceil(products.length / elementsPerPage);
         `;
 
 
+        // divProductos.innerHTML = `<div id="buscar">
+        // <input type="text" id="buscar-text">
+        // <div class="btn btn-filter">Buscar</div>
+        // </div>`;
         divProduct.append(divFotoProducto,divProductoDatos);
         divProductos.append(divProduct);
+          
+
         
     });
     paginasTotales = Math.ceil((products.filter(({ product }) => product.toLowerCase().includes(filter)).length) / elementsPerPage);
@@ -194,9 +201,11 @@ paginasTotales = Math.ceil(products.length / elementsPerPage);
     productosCarrito.forEach(producto => {
         document.getElementById("productoEnCarro").innerHTML +=
             `
+            <div class = "datosProducto">
             <div>${producto.cantidad}</div>
             <div>${producto.product}</div>
             <div>${producto.price}</div>
+            </div>
             `;
     });
 
@@ -217,13 +226,13 @@ function precioTotal() {
 
 document.getElementById("siguiente").addEventListener('click', ()=>{
   currentPage = (currentPage < paginasTotales - 1) ? currentPage+1 : currentPage;
-  filter = "";
+  
   mostrarProductos();
 });
 
 document.getElementById("atras").addEventListener('click', ()=>{
   currentPage = (currentPage > 0) ? currentPage-1 : currentPage;
-  filter = "";
+  
   mostrarProductos();
 })
 

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    height: 80px;
+    text-align: center;
+    background-color: aqua;
+    width: 100%;
+}
+
+#header div{
+    font-size: 70px;
+}
+#contenedor{
+    position: relative;
+    /* height: 600px;
+    width: 100%;
+    background-color: cadetblue; */
+}
+
+#cuadrado{
+    background-color: red;
+    position: absolute;
+}

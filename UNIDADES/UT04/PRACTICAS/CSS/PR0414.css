@@ -34,34 +34,150 @@
     #products-section {
         width: 70vw;
         background-color: #FFCC29;
+        padding: 20px; /* Espacio alrededor de los productos */
+    }
+    #products-section2{
+        width: 60vw;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 20px; /* Espacio alrededor de los productos */
+        flex-direction: row;
+
     }
 
     .product {
-        width: 60px; /* Calcula el ancho del producto restando el espacio del padding/margen */
+        width: 200px; /* Calcula el ancho del producto restando el espacio del padding/margen */
         margin: 80px; /* Espacio entre los productos */
         box-sizing: border-box; /* Incluye padding y borde en el ancho y alto */
-        height: 70px;
+        height: 250px;
+        
+        background-color: #F58634;
+        box-shadow: 10px 8px 10px #CA9E13;
+
     }
 
-    .product-foto{
-        width: calc(50% - 40px);
+    
+    .fruit-name{
+        margin-top: -5px;
+        background-color: #81B214;
+        height: 30px;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        padding-top: 5px;
     }
 
     #cart-section {
         width: 30vw;
         min-width: 350;
         background-color: #CA9E13;
+    }
+    #carrito {
+        background-color: gainsboro;
+    }
+    #carrito div{
+        display: inline-block;
+        margin: 5px 15px;
+        background-color: white;
+        padding: 5px;
+    }
+    #productoEnCarro .datosProducto{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        text-align: center;
+        padding: 0px;
+    }
+    #productosEnCarro .datosProducto div:last-child{
+        text-align: right;
+    }
+    #productoEnCarro .datosProducto div{
+        text-align: center;
+        
+    }
+
+    
+    
+    .price{
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+        color: white;
+        font-weight: 800;
+    }
+    .btn-add-product{
+        position: relative;
+        float: right;
+        top: 10px;
+        margin-right: 20px;
+        padding: 2px 10px;
+        background-color: #d7d7d7;
+        box-shadow: 2px 2px 5px black;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    
+    .btn-add-product:hover{
+        transform: translate(-1px,-1px);
+    }
+    .btn-add-product:active{
+        box-shadow: -2px -2px 5px black;
     }
 
     img{
-        width: 130px;
-        height: 140px;
+        width: 200px;
+        height: 160px;
     }
+
+    #buscar{
+        padding: 20px;
+        background-color: #FFCC29;
+        display: flex;
+        
+        
+    }
+    #buscar input{
+        height: 20px;
+    }
+
+    #buscar input:focus{
+        border: 1px solid #206A5D;
+    }
+    #buscar div{
+        border: 1px solid black;
+        height: 20px;
+        margin-left: 10px;
+        padding: 5px 5px;
+        background-color: #206A5D;
+        color: white;
+        font-weight: 700;
+    }
+    
+
+
+    footer{
+        background-color: #FFCC29;
+    }
+
+    #paginador{
+        height: 40px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+
+    #atras{
+        cursor: pointer;
+    }
+    #atras:hover{
+        transform: translate(-2px,-2px);
+    }
+
+    #siguiente{
+        cursor: pointer;
+    }
+    #siguiente:hover{
+        transform: translate(-2px,-2px);
+    }
+
