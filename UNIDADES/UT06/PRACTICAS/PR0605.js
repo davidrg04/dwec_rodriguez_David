@@ -4,7 +4,7 @@ let jugadores = [];
 let dificultades = [
     {
         id : 1,
-        width : 300,    // Math.floor(Math.random()*width)+30
+        width : 300,    
         height : 300
     },
     {

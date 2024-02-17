@@ -24,7 +24,7 @@ function getData(url) {
         .then(data => {
             renderData(data);
             if (data.next) {
-                getData(data.next); // Llamada recursiva con la próxima URL
+                getData(data.next); 
             }
         })
         .catch(error => {
@@ -32,4 +32,4 @@ function getData(url) {
         });
 }
 
-getData(url); // Inicia la primera llamada con la URL base
+getData(url); 
